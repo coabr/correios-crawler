@@ -15,7 +15,7 @@ for state in ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", 
 
     soup = BeautifulSoup(html, 'lxml')
 
-    table = soup.find('table')
+    table = soup.find_all('table', "tmptabela")
 
     # for row in table.findAll("tr"):
     #     cells = row.findAll('td')
