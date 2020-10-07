@@ -19,5 +19,5 @@ This project is a simple web crawler to get some data from the registered 'UFs' 
 In progress.
 
 ## What need to be done :memo:
-- [ ] Format the data collected;
+- [x] Clean the data collected;
 - [ ] Save in JSONL; 

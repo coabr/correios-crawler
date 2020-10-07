@@ -1,7 +1,7 @@
 import urllib.request
 from bs4 import BeautifulSoup
-import pandas as pd
-import json
+import re
+#import jsonlines
 
 for state in ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", "MS", "MT", "PA", "PB", "PE", "PI", "PR", "RJ", "RN", "RO", "RR", "RS", "SC", "SE", "SP", "TO"]:
     values = urllib.parse.urlencode({'UF': state})
@@ -15,10 +15,21 @@ for state in ["AC", "AL", "AM", "AP", "BA", "CE", "DF", "ES", "GO", "MA", "MG", 
 
     soup = BeautifulSoup(html, 'lxml')
 
-    table = soup.find_all('table', "tmptabela")
+#    tables = soup.find_all('table', "tmptabela")
 
-    # for row in table.findAll("tr"):
-    #     cells = row.findAll('td')
-  
-    print (table)
+    rows = soup.find_all('tr')
+    
+    regularExpression = r"(?:<td.*?>)(.*?)(?:</td>)"
+    
+    result = re.findall(regularExpression,html)
+    
+    print (result[:])
+
+
+    #for row in rows:
+    #    print (row.prettify())
+
+
+    #for table in tables:
+    #    print(table.prettify())
   
