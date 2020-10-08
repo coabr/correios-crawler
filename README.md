@@ -20,4 +20,9 @@ In progress.
 
 ## What need to be done :memo:
 - [x] Clean the data collected;
+- [ ] Change the data from arrays to dictionaries;
 - [ ] Save in JSONL; 
+
+## Ideas to improve in the future:
+- [ ] Use a virtual environment to freeze the packages versions inside requirements.txt
+
