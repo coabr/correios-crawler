@@ -12,7 +12,7 @@ This project is a simple web crawler to get some data from the registered 'UFs' 
 
 :small_blue_diamond: [lxml](https://pypi.org/project/lxml/) version >= 4.5.2
 
-:small_blue_diamond: [Pandas](https://pypi.org/project/pandas/) version >= 1.1.3
+:small_blue_diamond: [jsonlib](https://pypi.org/project/jsonlib/) version >= 1.6.1
 
 ## Project Status :construction: 
 
